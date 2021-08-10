@@ -13,3 +13,17 @@ export function capitalizeNames(arr){
 export function namesOnly(arr){
   return arr.map((names) => names.name)
 }
+
+// export function makeStrings(arr){
+//     arr.map ((ages) => ages.age)
+//     let string = arr
+//   if (string > 18) 
+//   return string.name + ' can go to The Matrix'
+//   else return string.name + ' is under age!!'
+// }
+
+export function makeStrings(arr){
+   if (arr.map ((ages) => ages.age > 18)
+  return ages.name + ' can go to The Matrix')
+  else return ages.name + ' is under age!!'
+}
