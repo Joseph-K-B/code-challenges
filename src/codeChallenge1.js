@@ -9,3 +9,7 @@ export function stringItUp(arr){
 export function capitalizeNames(arr){
   return arr.map ((names) => names[0].toUpperCase() + names.slice(1).toLowerCase())
 }
+
+export function namesOnly(arr){
+  return arr.map((names) => names.name)
+}
