@@ -84,7 +84,7 @@ test('stringify numbers', () => {
       "Kayne West is under age!!", 
       "Bob Ziroll can go to The Matrix"
   ]);
-  
+
   });
 
   test('create DOM', () => {
@@ -114,7 +114,7 @@ test('stringify numbers', () => {
   // arrange
     const output = readyToPutInTheDOM(input); // act
     expect(output).toEqual([
-      [
+      
         "<h1>Angelina Jolie</h1><h2>80</h2>", 
         "<h1>Eric Jones</h1><h2>2</h2>", 
         "<h1>Paris Hilton</h1><h2>5</h2>", 
@@ -122,5 +122,5 @@ test('stringify numbers', () => {
         "<h1>Bob Ziroll</h1><h2>100</h2>"
     ]
     
-  ]); // assert
+  );
   });

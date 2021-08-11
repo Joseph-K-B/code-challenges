@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 export function doubleNumbers(arr) {
   return arr.map((num) => num * 2);
@@ -27,15 +27,9 @@ export function makeStrings(arr){
     }
   })
 }
-// export function makeStrings(arr){
-//    if (arr.map ((item) => item.age > 18)
-//   return item.name + ' can go to The Matrix'
-//   else return item.name + ' is under age!!'
-//    )}
 
    export function readyToPutInTheDOM(arr){
-    return arr.map((item) => {
-        const dom = `<h1>${item.name}</h1><h2>${item.age}</h2>`
-        return dom;
-     })
-    }
+    return arr.map(({name, age}) => 
+       `<h1>${name}</h1><h2>${age}</h2>`       
+  );
+}
