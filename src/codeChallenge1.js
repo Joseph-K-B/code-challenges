@@ -22,8 +22,14 @@ export function namesOnly(arr){
 //   else return string.name + ' is under age!!'
 // }
 
-export function makeStrings(arr){
-   if (arr.map ((ages) => ages.age > 18)
-  return ages.name + ' can go to The Matrix')
-  else return ages.name + ' is under age!!'
-}
+// export function makeStrings(arr){
+//    if (arr.map ((item) => item.age > 18)
+//   return item.name + ' can go to The Matrix'
+//   else return item.name + ' is under age!!'
+//    )}
+
+   export function readyToPutInTheDOM(arr){
+  
+  }
+
+  
