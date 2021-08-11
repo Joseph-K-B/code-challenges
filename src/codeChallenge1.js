@@ -16,14 +16,17 @@ export function namesOnly(arr){
   return arr.map((names) => names.name)
 }
 
-// export function makeStrings(arr){
-//     arr.map ((ages) => ages.age)
-//     let string = arr
-//   if (string > 18) 
-//   return string.name + ' can go to The Matrix'
-//   else return string.name + ' is under age!!'
-// }
-
+export function makeStrings(arr){
+   return arr.map ((ages) =>{
+    
+    if ( ages.age > 18 ) {
+      return ages.name.toString() + ' can go to The Matrix';
+    }
+    else { 
+      return ages.name.toString() + ' is under age!!';
+    }
+  })
+}
 // export function makeStrings(arr){
 //    if (arr.map ((item) => item.age > 18)
 //   return item.name + ' can go to The Matrix'
@@ -31,15 +34,8 @@ export function namesOnly(arr){
 //    )}
 
    export function readyToPutInTheDOM(arr){
-     <>
-      <h1>
-      ${arr.map((names) => names.name)}
-      </h1>
-      <h2>
-        ${arr.map((ages) => ages.age)}
-      </h2>
-    </>
-    return readyToPutInTheDOM()
-  }
-
-  
+    return arr.map((item) => {
+        const dom = `<h1>${item.name}</h1><h2>${item.age}</h2>`
+        return dom;
+     })
+    }
