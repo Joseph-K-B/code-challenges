@@ -1,9 +1,11 @@
+import React from "react";
+
 export function doubleNumbers(arr) {
   return arr.map((num) => num * 2);
 }
 
 export function stringItUp(arr){
-   return arr.map ((num)=> num.toString())
+   return arr.map ((num) => num.toString())
 }
 
 export function capitalizeNames(arr){
@@ -29,7 +31,15 @@ export function namesOnly(arr){
 //    )}
 
    export function readyToPutInTheDOM(arr){
-  
+     <>
+      <h1>
+      ${arr.map((names) => names.name)}
+      </h1>
+      <h2>
+        ${arr.map((ages) => ages.age)}
+      </h2>
+    </>
+    return readyToPutInTheDOM()
   }
 
   
