@@ -15,8 +15,8 @@ test('return even numbers only', () => {
   test('five characters || <', () =>{
     const input = ['dog', 'wolf', 'family', 'eaten', 'camping'];
     const output = fiveOrLess(input);
-    expect(output).toEqual(['dog', 'wolf', 'eaten'])
-  } )
+    expect(output).toEqual(['dog', 'wolf', 'eaten']);
+  });
 
   test('illuminati members', () =>{
     const input = [
