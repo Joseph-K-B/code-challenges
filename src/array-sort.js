@@ -11,3 +11,8 @@ export function greatestToLeast(arr){
   export function lengthSort(arr){
     return arr.sort ((x, y) => x.length - y.length)
 }
+
+export function alphabetical(arr){
+  return arr.sort ();
+}
+

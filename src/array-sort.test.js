@@ -1,4 +1,4 @@
-import { leastToGreatest, greatestToLeast, lengthSort } from "./array-sort.js";
+import { leastToGreatest, greatestToLeast, lengthSort, alphabetical } from "./array-sort.js";
 
 test ('orders from least to greatest', ()=> {
     const input = [1, 3, 5, 2, 90, 20];
@@ -16,4 +16,10 @@ test ('shortest to longest string', ()=> {
     const input = ['dog', 'wolf', 'by', 'family', 'eaten']
     const output = lengthSort(input);
     expect(output).toEqual(['by', 'dog', 'wolf', 'eaten', 'family'])
+})
+
+test('returns strings in alphabetical order', ()=> {
+    const input = ['dog', 'wolf', 'by', 'family', 'eaten']
+    const output = alphabetical(input);
+    expect(output).toEqual(['by', 'dog', 'eaten', 'family', 'wolf'])
 })
