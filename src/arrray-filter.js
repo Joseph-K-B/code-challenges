@@ -18,3 +18,9 @@ export function peopleWhoBelongToTheIlluminati(arr){
       return item.member === true;
   })
 }
+
+export function ofAge(arr){
+  return arr.filter((item) => {
+      return item.age >= 18
+  })
+}

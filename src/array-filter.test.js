@@ -1,4 +1,4 @@
-import { fiveAndGreaterOnly, evensOnly, fiveOrLess, peopleWhoBelongToTheIlluminati } from './arrray-filter.js'
+import { fiveAndGreaterOnly, evensOnly, fiveOrLess, peopleWhoBelongToTheIlluminati, ofAge } from './arrray-filter.js'
 
 test('Five and greater only', () => {
   const input = [3, 6, 8, 2]; // arrange
@@ -31,4 +31,21 @@ test('return even numbers only', () => {
       { name: 'Angelina Jolie', member: true }, 
       { name: 'Paris Hilton', member: true }, 
       { name: 'Bob Ziroll', member: true }])
+  })
+
+  test ('can see the matrix', () =>{
+    const input = [
+      { name: 'Angelina Jolie', age: 80 },
+      { name: 'Eric Jones', age: 2 },
+      { name: 'Paris Hilton', age: 5 },
+      { name: 'Kayne West', age: 16 },
+      { name: 'Bob Ziroll', age: 100 }
+  ]
+  const output = ofAge(input)
+  expect(output).toEqual(
+    [ 
+      { name: 'Angelina Jolie', age: 80 },
+      { name: 'Bob Ziroll', age: 100 } 
+  ]
+  )
   })
