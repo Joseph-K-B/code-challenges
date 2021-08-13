@@ -8,7 +8,13 @@ export function evensOnly(arr) {
 }
 
 export function fiveOrLess(arr) {
-        return arr.filter((num) => {
-        return num.length <= 5;
+        return arr.filter((item) => {
+        return item.length <= 5;
     });
+}
+
+export function peopleWhoBelongToTheIlluminati(arr){
+  return arr.filter((item) => {
+      return item.member === true;
+  })
 }
