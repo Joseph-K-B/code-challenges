@@ -16,3 +16,6 @@ export function alphabetical(arr){
   return arr.sort ();
 }
 
+export function byAge(arr){
+  return arr.sort((x, y) => x.age - y.age)
+}
