@@ -1,4 +1,6 @@
-import { getHouses } from './more-object-keys-entries.js';
+import { getHouses, updateNumbers } from './more-object-keys-entries.js';
+
+
 test('it gets the names of the houses', () => {
   const characters = [
     {
@@ -45,5 +47,15 @@ test('it gets the names of the houses', () => {
     }
   ]; //arrange
   const output = getHouses(characters); //act
-  expect(output).toEqual(['Greyjoy', 'Snow', 'Arryn', 'Tyrell', 'Lannister', 'Targaryen', 'Stark']); //assert
+  expect(output).toEqual(['Greyjoy', 'Snow', 'Stark', 'Arryn', 'Tyrell', 'Lannister', 'Targaryen']); //assert
 });
+
+test('it updates the numbers', () => {
+    const numbers = [{
+        'Grace Hopper': '222-303-5938', 
+        'Ada Lovelace': '222-349-9842', 
+        'Alan Turing': '222-853-5933'}  
+    ]; //arrange
+    const output = updateNumbers(numbers); //act
+    expect(output).toEqual(['Grace Hopper: 222-303-5938','Ada Lovelace: 222-349-9842','Alan Turing: 222-853-5933']); //assert
+  });
