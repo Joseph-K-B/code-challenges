@@ -3,8 +3,7 @@
 };
 
 export function updateNumbers (obj) {
-    return  Object.values(obj).map(obj => `${obj[0]}``${obj[1]}``${obj[2]}`)
-    
+    return  Object.values(obj).map((val) => [toString(val), obj[val]] );    
 }
 
 export function totalCharacters(arr) {
@@ -16,3 +15,19 @@ export function totalCharacters(arr) {
     });
     return characters
 }
+
+export function hasChildrenEntries(arr, character) {
+    Object.entries(arr).map( arr => {
+        if (arr.children)
+        return true
+        else return false
+    })
+}
+
+export function sortByChildren(arr){
+   
+   arr.sort()(arr => {
+       if (arr.children (x, y) => x.children.length)
+   })
+} 
+
