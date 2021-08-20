@@ -5,3 +5,11 @@ export function howMuchPencil(str) {
     }
     return arr
 }
+
+export function wordsToCharList(arr) {
+    let array = []
+    for(let x = 0; x < arr.length; x++) {
+        array.push(arr[x]);
+    }
+    return array;
+}
