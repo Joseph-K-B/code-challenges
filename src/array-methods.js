@@ -13,3 +13,7 @@ export function wordsToCharList(arr) {
     }
     return array;
 }
+
+export function listFoods(recipe){
+  return recipe.ingredients.map(str => str.split(' ').slice(2).join(' '))
+}
