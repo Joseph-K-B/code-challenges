@@ -21,3 +21,7 @@ export function listFoods(recipe){
 export function stepActions(recipe) {
     return recipe.steps.map(str => str.split(' ').slice(0, 1).join(' '));
 }
+
+export function removeLastCharacters(str, numberOfCharacters){
+    return str.slice(0, str.length -numberOfCharacters, )
+}

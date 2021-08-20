@@ -1,4 +1,4 @@
-import { howMuchPencil, wordsToCharList, listFoods, stepActions } from './array-methods.js';
+import { howMuchPencil, wordsToCharList, listFoods, stepActions, removeLastCharacters } from './array-methods.js';
 
  test('It should return a list of shortening words', () => {
     expect(howMuchPencil('Welcome')).toStrictEqual(['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', '']);
@@ -50,3 +50,13 @@ import { howMuchPencil, wordsToCharList, listFoods, stepActions } from './array-
   test('should return actions w/o details from steps', () => {
       expect (stepActions(gruffaloCrumble)).toStrictEqual(['Pre-heat', 'De-prickle', 'Sprinkle', 'Mix', 'Grease', 'Combine', 'Fold', 'Spread', 'Bake'])
   })
+
+  test('should slice last characters', () => {
+    expect (removeLastCharacters('Gregor', 2)).toStrictEqual(['Greg'])
+    expect (removeLastCharacters('hello', -1)).toStrictEqual(['hello'])
+    expect (removeLastCharacters('wowow', -700)).toStrictEqual(['Greg'])
+    expect (removeLastCharacters('hello', 12)).toStrictEqual([''])
+    expect (removeLastCharacters('', )).toStrictEqual([''])
+    expect (removeLastCharacters('a', 1)).toStrictEqual([''])
+
+  });
