@@ -17,3 +17,7 @@ export function wordsToCharList(arr) {
 export function listFoods(recipe){
   return recipe.ingredients.map(str => str.split(' ').slice(2).join(' '))
 }
+
+export function stepActions(recipe) {
+    return recipe.steps.map(str => str.split(' ').slice(0, 1).join(' '));
+}
