@@ -3,6 +3,16 @@
 };
 
 export function updateNumbers (obj) {
-    let str = Object.keys(obj).map(key => obj[key]).join()
-    return str
+    return  Object.values(obj).map(obj => `${obj[0]}``${obj[1]}``${obj[2]}`)
+    
+}
+
+export function totalCharacters(arr) {
+    let characters = [];
+    Object.values(arr).forEach( arr => {
+        characters++;
+        characters += arr.children.length;
+        if (arr.spouse) characters ++;
+    });
+    return characters
 }
