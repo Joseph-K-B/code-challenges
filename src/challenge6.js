@@ -1,13 +1,9 @@
-export function totalSum(matrix) {
-    let sum = 0;
-    for (let i = 0; i < matrix.length; ++i){
-        sum += matrix[i];
-    }
-    // if (typeof matrix[i] == 'object')
-    // sum += totalSum(matrix[i]);
-    // else
-    //     sum += matrix[i];
-    return sum;
+export function returnTen(str) {
+    return Array.from(str).slice(-10)
 }
 
-totalSum(Array)
+export function totalSum(matrix) {
+   return matrix.flat(1).reduce((x, y) => {
+       return x + y;
+   })
+}
